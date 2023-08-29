@@ -2,14 +2,14 @@ package br.com.fiap.domain.entity;
 
 public class Estilo {
 
-    private long id;
+    private Long id;
 
     private String nome;
 
     public Estilo() {
     }
 
-    public Estilo(long id, String nome) {
+    public Estilo(Long id, String nome) {
         this.id = id;
         this.nome = nome;
     }
@@ -18,20 +18,17 @@ public class Estilo {
         return id;
     }
 
-    public Estilo setId(long id) {
+    public void setId(long id) {
         this.id = id;
-        return this;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public Estilo setNome(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
-        return this;
     }
-
 
     @Override
     public String toString() {
